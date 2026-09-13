@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Picture-in-Picture Button",
+  "version": "1.0.0",
+  "description": "Adds a Picture-in-Picture button to the YouTube player controls.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "YouTube Picture-in-Picture"
+  }
+}
